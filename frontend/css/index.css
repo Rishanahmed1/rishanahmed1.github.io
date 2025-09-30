@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+}
+.appbar {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: #f7f5f2;
+}
+.appbarrNavigation{
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.companyName {
+    padding: 15px;
+    display: flex;
+}
+
+.CompanyNameImage {
+    width: 50px;
+    height: 50px;
+}
+
+.CompanyNametext {
+    width: 90px;
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal; 
+}
+.nav-links{
+    display: flex;
+    gap: 2rem;
+}
+.nav-link, .drop-down li {
+    list-style: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.nav-link a{ 
+    margin: 1.5rem 2.5rem;
+}
+.drop-down{
+    position: absolute;
+    background-color: antiquewhite;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) ;
+    border-radius: 0.5rem;
+    font-size: 12px;
+    margin-left: 25px;
+    color: black;
+    display: none;
+}
+.nav-link:hover{
+    background-color: black;
+    color: #b3b3b3;
+    border-radius: 0.5rem;
+}
+.nav-link:hover a{
+    color: white;
+}
+.products:hover .drop-down{
+    display: block;
+}
