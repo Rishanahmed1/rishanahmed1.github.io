@@ -9,10 +9,14 @@ body {
     color: black;
     text-decoration: none;
 }
+.navbar p{
+    color: black;
+    text-decoration: none;
+}
 .appbar {
     display: flex;
     width: 100%;
-    height: 80px;
+    height: 120px;
     background-color: #f7f5f2;
 }
 .appbarrNavigation{
@@ -24,6 +28,8 @@ body {
 .companyName {
     padding: 15px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .CompanyNameImage {
@@ -39,35 +45,60 @@ body {
 }
 .nav-links{
     display: flex;
+    background-color: #f7f5f2;
+    padding: 2rem;
     gap: 2rem;
 }
-.nav-link, .drop-down li {
+.nav-links li{
     list-style: none;
-    padding: 0.5rem 1rem;
-    font-weight: 600;
-    cursor: pointer;
+    position: relative;
 }
-.nav-link a{ 
-    margin: 1.5rem 2.5rem;
-}
-.drop-down{
-    position: absolute;
-    background-color: antiquewhite;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) ;
-    border-radius: 0.5rem;
-    font-size: 12px;
-    margin-left: 25px;
+.nav-links a{
     color: black;
+    text-decoration: none;
+}
+.information{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.information a{
+    padding: 0.7rem;
+
+}
+.sub-menu{
     display: none;
+    position: absolute;
+    width: 180px;
+    border-radius: 10px;
+    top: 2rem;
+    background-color: wheat;
+    left: 0;
 }
-.nav-link:hover{
+.information a:hover{
     background-color: black;
-    color: #b3b3b3;
-    border-radius: 0.5rem;
+    color: #ffffff;
+    border-radius: 10px;
+    transition: all 1s ease;
 }
-.nav-link:hover a{
-    color: white;
+.sub-menu li{
+    margin: 20px;
 }
-.products:hover .drop-down{
+.sub-menu2{
+    display: none;
+    position: absolute;
+    width: 180px;
+    border-radius: 10px ;
+    background-color: rgb(255, 208, 120);
+}
+.products-1a:hover .products1{
     display: block;
+
+}
+.products1:hover .Nestle{
+    display: block;
+    left: 100%;
+    top: -30%;
+    transition: all 0.3s;
 }
