@@ -122,13 +122,27 @@ body {
 
 .sub-menu3 {
     display: none;
-    position: relative;
-    width: 180px;
+    position: absolute;
+    width: 200px;
     border-radius: 10px;
     background-color: rgb(255, 234, 49);
 }
 
 .Nescafe_Chocolate_li:hover .nescafechocolate {
+    display: block;
+    left: 100%;
+    top: -30%;
+    transition: all 0.3s;
+}
+
+.nestle_vending:hover .NestleVending {
+    display: block;
+    left: 100%;
+    top: -30%;
+    transition: all 0.3s;
+}
+
+.nestleLatte_:hover .nestleLatte {
     display: block;
     left: 100%;
     top: -30%;
@@ -162,7 +176,7 @@ body {
     .sub-menu3 {
         padding: 10px;
         display: none;
-        position: relative;
+        position: absolute;
         width: 180px;
         border-radius: 10px;
         background-color: rgb(255, 234, 49);
@@ -171,19 +185,21 @@ body {
     .Nescafe_Chocolate_li:hover .nescafechocolate {
         display: block;
         top: -30%;
-        left: -1%;
+        left: 5rem;
         transition: all 0.3s;
     }
+
     .nestle_vending:hover .NestleVending {
         display: block;
         top: -30%;
-        left: -1%;
+        left: 5rem; 
         transition: all 0.3s;
     }
+
     .nestleLatte_:hover .nestleLatte {
         display: block;
         top: -30%;
-        left: -1%;
+        left: 5rem;
         transition: all 0.3s;
     }
 }
